@@ -18,5 +18,8 @@
     <ClCompile Include="1day.cpp">
       <Filter>헤더 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2day.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
