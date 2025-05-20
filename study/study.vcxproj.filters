@@ -13,15 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\강의">
+      <UniqueIdentifier>{c4c29c6a-b994-4286-8b53-337e63555936}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1day.cpp">
+    <ClCompile Include="Vector.cpp">
       <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="반복문.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="조건문.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1day.cpp">
+      <Filter>헤더 파일\강의</Filter>
     </ClCompile>
     <ClCompile Include="2day.cpp">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\강의</Filter>
     </ClCompile>
     <ClCompile Include="3day.cpp">
+      <Filter>헤더 파일\강의</Filter>
+    </ClCompile>
+    <ClCompile Include="대소문자 바꿔서 출력하기.cpp">
       <Filter>헤더 파일</Filter>
     </ClCompile>
   </ItemGroup>
