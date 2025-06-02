@@ -153,3 +153,61 @@ solution: 함수 이름(문제에 따라 정해져 있음 또는 사용자가 정함)
 즉, "문자열 하나를 입력으로 받아서 정수 벡터를 반환하는 함수" 라는 뜻
 
 "문자열 route를 받아서 정수 벡터를 리턴하는 함수 solution을 정의합니다"
+
+
+
+
+
+
+[C++ STL:vector] 벡터 정렬(vector sorting) - 오름차순, 내림차순, 사용자 지정 정렬
+출처 : https://kkaeruk.tistory.com/18 [깨륵의 코딩일기    :: 깨코:티스토리]
+
+
+#include <string>
+#include <vector>
+#include <algorithm>  // sort() 함수 사용
+
+using namespace std;
+
+int solution(vector<int> num_list) {
+    int answer = 0;
+    string a_str = "";
+    string b_str = "";
+
+    // 벡터를 오름차순으로 정렬
+    sort(num_list.begin(), num_list.end());
+
+    for (int i = 0; i < num_list.size(); i++) {
+        if (num_list[i] % 2 == 1) {
+            a_str += to_string(num_list[i]);
+        }
+        else {
+            b_str += to_string(num_list[i]);
+        }
+    }
+
+    // 문자열 → 정수 변환
+    int a = a_str.empty() ? 0 : stoi(a_str);
+    int b = b_str.empty() ? 0 : stoi(b_str);
+
+    answer = a + b;
+    return answer;
+}
+
+
+
+sort()에 greater<int>()를 넣어주면 내림차순으로 정렬됨
+
+sort(num_list.begin(), num_list.end(), greater<int>());
+
+sort()로 벡터를 원하는 순서로 정렬
+
+오름차순 : sort(num_list.begin(), num_list.end());
+
+내림차순: sort(num_list.begin(), num_list.end(), greater<int>());
+
+이후에 += 로 이어붙이기
+
+
+
+
