@@ -13,43 +13,37 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="헤더 파일\concept">
-      <UniqueIdentifier>{354048e1-41f0-439d-bc10-fe58ca834db2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\class">
-      <UniqueIdentifier>{c4c29c6a-b994-4286-8b53-337e63555936}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1day.cpp">
-      <Filter>헤더 파일\class</Filter>
-    </ClCompile>
-    <ClCompile Include="2day.cpp">
-      <Filter>헤더 파일\class</Filter>
-    </ClCompile>
-    <ClCompile Include="3day.cpp">
-      <Filter>헤더 파일\class</Filter>
-    </ClCompile>
     <ClCompile Include="FileName.cpp">
       <Filter>헤더 파일</Filter>
     </ClCompile>
-    <ClCompile Include="vector.cpp">
-      <Filter>헤더 파일\concept</Filter>
+    <ClCompile Include="class\1day.cpp">
+      <Filter>헤더 파일</Filter>
     </ClCompile>
-    <ClCompile Include="대소문자 바꿔서 출력하기.cpp">
-      <Filter>헤더 파일\concept</Filter>
+    <ClCompile Include="class\2day.cpp">
+      <Filter>헤더 파일</Filter>
     </ClCompile>
-    <ClCompile Include="반복문.cpp">
-      <Filter>헤더 파일\concept</Filter>
+    <ClCompile Include="class\3day.cpp">
+      <Filter>헤더 파일</Filter>
     </ClCompile>
-    <ClCompile Include="조건문.cpp">
-      <Filter>헤더 파일\concept</Filter>
+    <ClCompile Include="concept\bool.cpp">
+      <Filter>헤더 파일</Filter>
     </ClCompile>
-    <ClCompile Include="string.cpp">
-      <Filter>헤더 파일\concept</Filter>
+    <ClCompile Include="concept\string.cpp">
+      <Filter>헤더 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bool.cpp">
-      <Filter>헤더 파일\concept</Filter>
+    <ClCompile Include="concept\vector.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\대소문자 바꿔서 출력하기.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\반복문.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\조건문.cpp">
+      <Filter>헤더 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

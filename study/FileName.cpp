@@ -3,21 +3,20 @@
 
 using namespace std;
 
-int solution(int a, int b) {
-    int answer = 0;
+vector<int> solution(vector<int> num_list) {
+    vector<int> answer;
+    int n = num_list.back();
+    int m = num_list[num_list.size() - 2];
 
-    string ab = to_string(a) + to_string(b);
-    int ab_num = stoi(ab);
+    for (int i = 0; i < num_list.size(); i++) {
+        if (n > m) {
+            num_list.push_back(n - 1);
+        }
+        else {
+            num_list.push_back(n * 2);
+        }
+    }
 
-    if (ab_num > (2 * a * b)) {
-        answer += stoi(ab);
-    }
-    else if (ab < (2 * a * b)) {
-        answer += 2 * a * b;
-    }
-    else {
-        answer += stoi(ab);
-    }
 
 
     return answer;
