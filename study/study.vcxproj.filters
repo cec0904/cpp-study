@@ -57,5 +57,20 @@
     <ClCompile Include="concept\test.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="concept\Range-based for.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\insert.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\emplace_back.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\erase.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\slice.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -236,6 +236,21 @@ auto는 요소 타입 자동 추론을 위해 유용하고, int, pair, const auto& 등으로도 자유
 
 
 
+// iota를 사용한 예시
+#include <iostream>
+#include <vector>
+#include <numeric>  // iota
+
+using namespace std;
+
+int main() {
+    vector<int> v(5);              // [0, 0, 0, 0, 0]
+    iota(v.begin(), v.end(), 1);   // [1, 2, 3, 4, 5]
+
+    for (int x : v) {
+        cout << x << " ";
+    }
+}
 
 
 

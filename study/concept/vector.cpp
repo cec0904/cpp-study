@@ -209,5 +209,11 @@ sort()로 벡터를 원하는 순서로 정렬
 이후에 += 로 이어붙이기
 
 
+sort(indices.rbegin(), indices.rend()); // 내림차순 정렬 (reverse iterator)
+
+방법	            코드	                                    특징
+greater<int>()	    sort(v.begin(), v.end(), greater<int>())	비교 함수를 줘서 정렬
+
+rbegin() / rend()	sort(v.rbegin(), v.rend())	                reverse iterator로 뒤집어서 정렬
 
 

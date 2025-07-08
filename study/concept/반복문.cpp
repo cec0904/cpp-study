@@ -53,3 +53,11 @@ while (answer.size() < 4) {
 if (answer.size() < 4) {
     answer += string(4 - answer.size(), 'o');
 }
+
+
+
+
+
+
+
+
