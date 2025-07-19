@@ -57,7 +57,27 @@ if (answer.size() < 4) {
 
 
 
+C++에서 for문의 간격(또는 증감식)은 반복문이 실행될 때마다 변수 값을 변경하는 부분입니다.일반적으로 i++ (1씩 증가), i-- (1씩 감소), i += 2 (2씩 증가) 와 같이 사용됩니다.간격을 조정하여 반복 범위를 제어할 수 있습니다.
 
+기본 형태 :
+for (초기화식; 조건식; 증감식) {
+    // 반복할 코드
+}
 
+예시:
+#include <string>
+#include <vector>
 
+using namespace std;
+
+vector<int> solution(vector<int> num_list, int n) {
+    vector<int> answer;
+
+    for (int i = 0; i < num_list.size(); i += n)
+    {
+        answer.push_back(num_list[i]);
+    }
+
+    return answer;
+}
 

@@ -83,14 +83,29 @@ v.insert(v.begin() + 1, 3, 5);  // 1번째 인덱스 자리에 5를 3번 삽입
 예시 5 : 빈 벡터에 삽입
 vector<int> v;
 v.insert(v.begin(), 10);  // 빈 벡터에 10 삽입
+end 해도 상관없음
 // 결과: {10}
 
 
 예시 6: 다른 벡터 범위 삽입
+vector.insert(position, count, value);
+
 vector<int> v = { 1, 2, 3 };
 vector<int> to_add = { 10, 20 };
 v.insert(v.begin() + 1, to_add.begin(), to_add.end());
 // 결과: {1, 10, 20, 2, 3}
+
+vector<string>::iterator에서 insert(begin, end)는 반열린 구간[begin, end) 을 의미
+즉, begin은 포함하고, end는 포함하지 않는다
+
+이건 C++ STL의 모든 insert, erase, copy, assign에서 동일하게 적용되는 규칙.
+->[시작, 끝) -> 끝은 포함 안 함
+
+
+
+
+
+
 
 
 pos에 올 수 있는 것들
