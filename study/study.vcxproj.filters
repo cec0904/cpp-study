@@ -72,5 +72,8 @@
     <ClCompile Include="concept\slice.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="concept\for.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
