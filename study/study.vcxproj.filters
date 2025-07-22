@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="FileName.cpp">
+    <ClCompile Include="concept\FileName.cpp">
       <Filter>헤더 파일</Filter>
     </ClCompile>
     <ClCompile Include="class\1day.cpp">
@@ -73,6 +73,15 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="concept\for.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\대문자소문자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\absolute_value.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\비트연산자.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
