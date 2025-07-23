@@ -1,21 +1,23 @@
 #include <string>
 #include <vector>
+#include <cmath>
 
 using namespace std;
 
-string solution(string my_string, vector<int> indices) {
-    string answer = "";
-    my_string = "apporoograpemmemprs";
-    indices = { 1, 16, 6, 15, 0, 10, 11, 3 };
+long long solution(long long n) {
+    long long answer = 0;
+    
 
-    for (int i = 0; i < my_string.size(); i++)
+    for (long long i = 0; i < n; i++)
     {
-        if (my_string[i] == indices[i])
+        if (i * i == n)
         {
-			answer += my_string[i];
+			answer = (i + 1) * (i + 1);
         }
-
+        else
+        {
+            answer = -1;
+        }
     }
-
     return answer;
 }

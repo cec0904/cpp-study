@@ -84,5 +84,8 @@
     <ClCompile Include="concept\비트연산자.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="concept\제곱근_sqrt.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
