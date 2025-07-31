@@ -153,3 +153,136 @@ a_str.empty()는 true가 되어서 stoi(a_str) 호출을 피할 수 있음
 
 stoi(a_str)를 호출하기 전에 a_str이 비었는지 확인해주는 코드가 
 오류를 방지해주는 역할을 합니다.
+
+
+
+
+1. string(길이, 문자) 생성자
+
+문법 : string(반복횟수, 문자)
+
+의미 : 해당 문자로 반복횟수만큼 길이를 가진 문자열 객체를 생성
+
+예시
+
+string s = string(5, 'A'); // "AAAAA"
+string t = string(3, '*'); // "***"
+
+2. result += string(at - half, '*');
+이 줄이 하는 일
+
+at는 '@'의 위치 → 즉, 이메일에서 앞부분(이름) 길이
+
+half는 at / 2 → 앞부분의 절반(내림)
+
+at - half
+→ 남은 절반의 개수
+(앞부분 전체 길이에서 절반만큼 빼면, 가려야 할 문자의 개수)
+
+최종 의미
+string(at - half, '*')
+→ 별표(*)를(가릴 개수)만큼 생성
+
+result += string(at - half, '*');
+→ 이만큼의 별(*)을 result 문자열에 붙인다
+
+3. 전체 예시로 정리
+이메일이 "hello@naver.com"
+
+at = 5 (h, e, l, l, o)
+
+half = 2 (5 / 2 = 2)
+
+가릴 개수 : 5 - 2 = 3
+
+string(3, '*') → "***"
+
+앞 2글자 + "***" + "@naver.com"
+→ "he***@naver.com"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. 문자열 채우기(초기화)
+
+string stars = string(10, '*'); // "**********" (별 10개)
+string zeroes = string(5, '0'); // "00000" (0 다섯 개)
+반복되는 문자로 빠르게 문자열 만들 때!
+
+
+
+2. 오른쪽 / 왼쪽 패딩(정렬)
+예: 숫자를 8자리로 오른쪽 정렬(왼쪽을 '0'으로 채우기)
+
+
+string num = "123";
+string padded = string(8 - num.size(), '0') + num; // "00000123"
+
+
+
+3. 특정 위치만 치환(부분 수정)
+예: 뒷자리만 가리기
+
+
+string phone = "01012345678";
+phone.replace(3, 4, string(4, '*')); // "010****5678"
+
+
+
+4. 줄바꿈, 구분선 만들기
+
+cout << string(30, '-') << endl; // ------------------------------
+cout << string(50, '=') << endl; // ==============================
+
+
+
+5. 알파벳, 문자 반복
+
+string aaaa = string(4, 'a'); // "aaaa"
+string dotdot = string(10, '.'); // ".........."
+
+
+
+6. 문자열 비교 / 테스트용 더미 데이터
+
+string dummy = string(100, 'x'); // "xxxxxxxxxx ... (100개)"
+
+
+
+7. 조건에 따라 빈 칸 / 공백 채우기
+
+string name = "홍길동";
+cout << name + string(10 - name.size(), ' ') + "|";
+// 홍길동      |
+
+
+
+8. 2차원 배열 등에서 한 줄 초기화
+
+vector<string> board(5, string(5, '.')); // 5x5 .로 채운 보드
+
+
+
+9. 파스칼삼각형, 별찍기 등 패턴 만들 때
+
+for (int i = 1; i <= 5; i++) {
+    cout << string(i, '*') << endl;
+}
+// *
+// **
+// ***
+// ****
+// *****
+

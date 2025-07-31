@@ -87,5 +87,20 @@
     <ClCompile Include="concept\제곱근_sqrt.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="concept\while.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\substr.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\climits.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\최대최소.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\auto.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
