@@ -11,3 +11,15 @@
 // 중단점 생성 및 해제 : F9
 // 디버깅 중, 구문 한 줄 실행 : F10
 // 디버깅 중, 함수 내부로 들어가기 : F11
+
+
+
+int Add(int a, int b)
+{
+	return a + b;
+}
+
+int main()
+{
+	int data = Add(100, 200);
+}

@@ -114,5 +114,17 @@
     <ClCompile Include="class\단축키.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="concept\regex.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\map.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\find.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="concept\람다함수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
